@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Bhanti - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+      }
+      .window-title-gradient {
+        background: linear-gradient(to bottom, rgba(240, 240, 240, 0.9), rgba(200, 200, 200, 0.8));
+        position: relative;
+      }
+      .window-title-gradient::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: radial-gradient(circle at 50% -20%, rgba(255,255,255,0.6), transparent 70%);
+      }
+      .window-title-gradient-inactive {
+        background: linear-gradient(to bottom, rgba(235, 235, 235, 0.9), rgba(220, 220, 220, 0.8));
+      }
+      .taskbar-gradient {
+        background: linear-gradient(to bottom, rgba(30, 80, 140, 0.9), rgba(15, 45, 90, 0.95));
+      }
+      .start-menu-gradient {
+        background: linear-gradient(to right, rgba(30, 80, 140, 0.9), rgba(15, 45, 90, 0.95));
+      }
+      .start-button-orb {
+        background: radial-gradient(circle at 50% 30%, #68b3f7, #2877c4 70%);
+        box-shadow: 0 0 10px rgba(135, 206, 250, 0.8), inset 0 0 5px rgba(255, 255, 255, 0.5);
+      }
+      .start-button-orb:hover {
+        background: radial-gradient(circle at 50% 30%, #8ac7ff, #3a93e6 70%);
+      }
+      .window-enter {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      .window-enter-active {
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 200ms ease-out, transform 200ms ease-out;
+      }
+      .window-exit {
+        opacity: 1;
+      }
+      .window-exit-active {
+        opacity: 0;
+        transition: opacity 150ms ease-in;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "vite": "https://aistudiocdn.com/vite@^7.2.2",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

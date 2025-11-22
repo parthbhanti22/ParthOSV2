@@ -1,0 +1,7 @@
+{
+  "name": "Parth Bhanti's Interactive Portfolio",
+  "description": "An interactive portfolio website for Parth Bhanti, designed to look and feel like the Windows 7 operating system. Explore projects, skills, and even play a game of Minesweeper.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
